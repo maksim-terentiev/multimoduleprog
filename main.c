@@ -37,8 +37,8 @@ int test(char* str){
            )
             &&
            (
-                ('a'<=str[endl_pos] && str[endl_pos]<='z')
+                ('a'<=str[endl_pos-1] && str[endl_pos-1]<='z')
                  ||
-                ('A'<=str[endl_pos] && str[endl_pos]<='Z')
+                ('A'<=str[endl_pos-1] && str[endl_pos-1]<='Z')
            );
 }
