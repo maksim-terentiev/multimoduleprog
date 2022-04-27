@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "nasm_module.h"
 
-#define MAX_LEN 101 // 100 chars plus '\0'
+#define MAX_LEN 201 // 100 chars plus '\0' plus more 100 because dubling
+#define MAX_INPUT_LEN 101
 
 int test(char* str);
 
@@ -9,7 +10,7 @@ int main(){
     char str[MAX_LEN];
     //char buf[MAX_LEN];
     //printf("Enter source text\n>: ");
-    fgets(str,MAX_LEN, stdin);
+    fgets(str,MAX_INPUT_LEN, stdin);
     printf("Source text:\n%s\nEnd of source text\n",str);
 
     if(test(str)){
