@@ -10,7 +10,7 @@ int main(){
     //char buf[MAX_LEN];
     //printf("Enter source text\n>: ");
     fgets(str,MAX_LEN, stdin);
-    printf("Source text:\n%s\nEnd of source text\n");
+    printf("Source text:\n%s\nEnd of source text\n",str);
 
     if(test(str)){
         printf("Rule 1\n");
@@ -20,7 +20,7 @@ int main(){
         rule2(str);
     }
 
-    printf("New text:\n%s\nEnd of new text\n");
+    printf("New text:\n%s\nEnd of new text\n",str);
     return 0;
 }
 
